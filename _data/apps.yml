@@ -1,0 +1,19 @@
+- name: うれペタ
+  desc: うれたらペタッとうれしいアプリ
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/urepeta/
+
+- name: ツイテル
+  desc: ペンライトの電池を経験と感覚で管理するアプリ
+  tag: 🎪 イベント・推し活に
+  url: https://lblt-labo.github.io/tsuiteru/
+
+- name: つくペタ
+  desc: 味の黄金比を、ペタッとつくれるアプリ
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/tsukupeta/
+
+- name: サクカン
+  desc: すべての幹事さんをサポートするアプリ
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/sakukan/
