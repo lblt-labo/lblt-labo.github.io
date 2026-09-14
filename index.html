@@ -57,23 +57,30 @@ title: LB(L)T LABO
 
   /* アイコンカードのスタイル */
   .app-item {
-  position: relative;
-  display: block;
-  aspect-ratio: 1 / 1;
-  border-radius: 22px;
-  overflow: hidden;
-  background: #2a4b63; /* ← ビールの背景色と同化させて白枠を消す */
-  border: 1px solid #30363d;
-  text-decoration: none;
-  transition: transform 0.2s ease;
-}
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 1;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #161b22; /* ← 元の暗い背景色に戻します */
+    border: 1px solid #30363d;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
 
   .app-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    transform: scale(1.22); /* ← 画像を少し拡大して四隅の白枠を消します */
   }
+
+  .app-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.22); /* ← これを追加！四隅の透明なスキマをカットして枠いっぱいに広げます */
+}
 
   /* ② マウスオン（ホバー）時のオーバーレイ演出 */
   .app-overlay {
