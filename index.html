@@ -144,7 +144,15 @@ title: LB(L)T LABO
   <div class="app-grid">
     {% for app in site.data.apps %}
       <a href="{{ app.url }}" class="app-item" target="_blank" rel="noopener">
-        <img src="{{ app.icon }}" alt="{{ app.name }}">
+        <!-- アイコン画像がある場合 -->
+        {% if app.icon %}
+          <img src="{{ app.icon }}" alt="{{ app.name }}">
+        <!-- アイコン画像がない場合（自動で文字アイコンを生成） -->
+        {% else %}
+          <div class="no-icon">{{ app.name }}</div>
+        {% endif %}
+        
+        <!-- マウスオン時の表示 -->
         <div class="app-overlay">
           <div class="app-name">{{ app.name }}</div>
           <div class="app-desc-short">{{ app.desc }}</div>
