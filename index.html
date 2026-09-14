@@ -4,7 +4,6 @@ title: LB(L)T LABO
 ---
 
 <style>
-  /* 全体背景とコンテンツ幅の絞り込み（①幅狭め） */
   body {
     background-color: #0d1117 !important;
     color: #c9d1d9 !important;
@@ -12,15 +11,12 @@ title: LB(L)T LABO
     margin: 0;
     padding: 0;
   }
-
-  /* メインコンテンツエリア（幅を680pxにギュッと絞ってスタイリッシュに） */
   .main-container {
     max-width: 680px;
     margin: 0 auto;
     padding: 0 20px 60px 20px;
   }
-
-  /* ③ トップのヘッダー画像エリア */
+  /* ヘッダー画像 */
   .header-banner {
     width: 100%;
     height: 180px;
@@ -29,8 +25,6 @@ title: LB(L)T LABO
     margin-bottom: 32px;
     border: 1px solid #30363d;
   }
-
-  /* サイトタイトル部分 */
   .site-intro {
     text-align: center;
     margin-bottom: 40px;
@@ -41,44 +35,32 @@ title: LB(L)T LABO
     margin: 0 0 8px 0;
     font-weight: 700;
   }
-  .site-intro p {
-    font-size: 0.9rem;
-    color: #8b949e;
-    margin: 0;
-  }
-
-  /* ② アプリアイコンのグリッド配置 */
   .app-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 20px;
-    justify-content: center;
   }
-
-  /* アイコンカードのスタイル */
-  /* カード枠 */
+  /* アプリカード */
   .app-item {
     position: relative;
     display: block;
     aspect-ratio: 1 / 1;
     border-radius: 22px;
-    overflow: hidden; /* はみ出た画像をしっかり切り落とす */
+    overflow: hidden; /* はみ出た画像を枠線でカット */
     background: #161b22;
     border: 1px solid #30363d;
     text-decoration: none;
     transition: transform 0.2s ease;
   }
-
-  /* 画像（拡大して四隅の白を画面外へ追い出す） */
+  /* アプリ画像（拡大して白枠を画面外へ消す） */
   .app-item img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    transform: scale(1.28) !important; /* 拡大率を1.28にアップ */
+    transform: scale(1.28) !important; /* 1.28倍ズームで四隅の白いフチを隠す */
     display: block;
   }
-
-  /* 画像がない場合のフォールバック（中央表示） */
+  /* 画像がない場合の文字アイコン（中央揃え） */
   .no-icon {
     width: 100%;
     height: 100%;
@@ -88,77 +70,65 @@ title: LB(L)T LABO
     justify-content: center;
     color: #38bdf8;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 12px;
     box-sizing: border-box;
     text-align: center;
   }
-
-  .app-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1.22); /* ← 画像を少し拡大して四隅の白枠を消します */
-  }
-
-  .app-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scale(1.22); /* ← これを追加！四隅の透明なスキマをカットして枠いっぱいに広げます */
-}
-
-  /* ② マウスオン（ホバー）時のオーバーレイ演出 */
+  /* マウスオン（ホバー）時のオーバーレイ */
   .app-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(13, 17, 23, 0.88);
+    background: rgba(13, 17, 23, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 10px;
     box-sizing: border-box;
     text-align: center;
-    opacity: 0; /* 通常時は非表示 */
+    opacity: 0;
     transition: opacity 0.2s ease;
   }
-
   .app-item:hover {
     transform: translateY(-4px);
     border-color: #58a6ff;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   }
-
-  /* マウスを乗せたらテキストを表示 */
   .app-item:hover .app-overlay {
     opacity: 1;
   }
-
   .app-name {
     font-size: 0.85rem;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 4px;
-    line-height: 1.2;
+  }
+  .app-desc-short {
+    font-size: 0.65rem;
+    color: #8b949e;
   }
 
-  .app-desc-short {
-    font-size: 0.68rem;
+  /* 免責事項フッター */
+  .site-footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #30363d;
+    text-align: center;
+    font-size: 0.75rem;
     color: #8b949e;
-    line-height: 1.3;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    line-height: 1.6;
   }
+  .site-footer p {
+    margin: 4px 0;
+  }
+  
 </style>
 
 <div class="main-container">
-  <!-- ③ note風ヘッダー画像（ご自身の画像パスに変更してください） -->
+  <!-- ヘッダー画像（アップロードした画像名に合わせて変更） -->
   <img src="./header.png" alt="Header Banner" class="header-banner">
 
   <div class="site-intro">
@@ -166,19 +136,16 @@ title: LB(L)T LABO
     <p>日常をちょっと楽しくするWEBアプリケーション集</p>
   </div>
 
-  <!-- ①＆② コンパクトな幅で並ぶアイコンギャラリー -->
   <div class="app-grid">
     {% for app in site.data.apps %}
       <a href="{{ app.url }}" class="app-item" target="_blank" rel="noopener">
-        <!-- アイコン画像がある場合 -->
-        {% if app.icon %}
+        <!-- iconがある場合だけ<img>を出力、ない場合は.no-iconを出力 -->
+        {% if app.icon and app.icon != "" %}
           <img src="{{ app.icon }}" alt="{{ app.name }}">
-        <!-- アイコン画像がない場合（自動で文字アイコンを生成） -->
         {% else %}
           <div class="no-icon">{{ app.name }}</div>
         {% endif %}
         
-        <!-- マウスオン時の表示 -->
         <div class="app-overlay">
           <div class="app-name">{{ app.name }}</div>
           <div class="app-desc-short">{{ app.desc }}</div>
@@ -186,4 +153,13 @@ title: LB(L)T LABO
       </a>
     {% endfor %}
   </div>
+
+  <!-- 免責事項フッター -->
+  <footer class="site-footer">
+    <p>【免責事項】</p>
+    <p>当サイトで提供している各アプリケーション・コンテンツの利用によって生じた損害等について、当ラボは一切の責任を負いかねます。</p>
+    <p>各サービスの仕様は予告なく変更・停止する場合があります。あらかじめご了承ください。</p>
+    <p style="margin-top: 16px; color: #484f58;">&copy; {{ 'now' | date: "%Y" }} LB(L)T LABO All Rights Reserved.</p>
+  </footer>
+  
 </div>
