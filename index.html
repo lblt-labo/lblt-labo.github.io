@@ -4,112 +4,145 @@ title: LB(L)T LABO
 ---
 
 <style>
-  /* 全体の背景と基本設定をダークモード化 */
+  /* 全体背景とコンテンツ幅の絞り込み（①幅狭め） */
   body {
-    background-color: #121212 !important;
-    color: #e4e4e7 !important;
+    background-color: #0d1117 !important;
+    color: #c9d1d9 !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  
-  /* Jekyllのデフォルト枠線やヘッダー背景を上書き */
-  .container-lg, .Header, .footer {
-    background-color: #121212 !important;
-    border: none !important;
+    margin: 0;
+    padding: 0;
   }
 
-  .site-title-area {
-    padding: 24px 0 12px 0;
-    border-bottom: 1px solid #27272a;
-    margin-bottom: 32px;
+  /* メインコンテンツエリア（幅を680pxにギュッと絞ってスタイリッシュに） */
+  .main-container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 20px 60px 20px;
   }
-  .site-title-area h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+
+  /* ③ トップのヘッダー画像エリア */
+  .header-banner {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 32px;
+    border: 1px solid #30363d;
+  }
+
+  /* サイトタイトル部分 */
+  .site-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .site-intro h1 {
+    font-size: 1.6rem;
     color: #ffffff;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+  }
+  .site-intro p {
+    font-size: 0.9rem;
+    color: #8b949e;
     margin: 0;
   }
 
-  /* カード配置（グリッド） */
-  .card-grid {
+  /* ② アプリアイコンのグリッド配置 */
+  .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 20px;
+    justify-content: center;
   }
 
-  /* アプリカードの高級感ある質感 */
-  .app-card {
-    background: #1e1e22;
-    border: 1px solid #2e2e34;
-    border-radius: 12px;
-    padding: 24px;
+  /* アイコンカードのスタイル */
+  .app-item {
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 1;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #161b22;
+    border: 1px solid #30363d;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .app-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ② マウスオン（ホバー）時のオーバーレイ演出 */
+  .app-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 17, 23, 0.88);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.2s ease;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    opacity: 0; /* 通常時は非表示 */
+    transition: opacity 0.2s ease;
   }
-  .app-card:hover {
-    border-color: #52525b;
-    transform: translateY(-3px);
+
+  .app-item:hover {
+    transform: translateY(-4px);
+    border-color: #58a6ff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   }
 
-  /* タグの装飾 */
-  .tag {
-    font-size: 0.75rem;
-    color: #a1a1aa;
-    background: #27272a;
-    padding: 4px 10px;
-    border-radius: 20px;
-    display: inline-block;
-    margin-bottom: 16px;
-    border: 1px solid #3f3f46;
+  /* マウスを乗せたらテキストを表示 */
+  .app-item:hover .app-overlay {
+    opacity: 1;
   }
 
-  /* タイトルと説明文 */
-  .app-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0 0 8px 0;
+  .app-name {
+    font-size: 0.85rem;
+    font-weight: 700;
     color: #ffffff;
-  }
-  .app-desc {
-    font-size: 0.875rem;
-    color: #a1a1aa;
-    margin-bottom: 24px;
-    line-height: 1.6;
+    margin-bottom: 4px;
+    line-height: 1.2;
   }
 
-  /* リンクボタン */
-  .btn-open {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #38bdf8;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    transition: color 0.15s ease;
-  }
-  .btn-open:hover {
-    color: #7dd3fc;
-    text-decoration: underline;
+  .app-desc-short {
+    font-size: 0.68rem;
+    color: #8b949e;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 </style>
 
-<div class="site-title-area">
-  <h1>LB(L)T LABO</h1>
-</div>
+<div class="main-container">
+  <!-- ③ note風ヘッダー画像（ご自身の画像パスに変更してください） -->
+  <img src="https://via.placeholder.com/1200x400/161b22/58a6ff?text=LB(L)T+LABO" alt="Header Banner" class="header-banner">
 
-<div class="card-grid">
-  {% for app in site.data.apps %}
-    <div class="app-card">
-      <div>
-        <span class="tag">{{ app.tag }}</span>
-        <h3 class="app-title">{{ app.name }}</h3>
-        <p class="app-desc">{{ app.desc }}</p>
-      </div>
-      <a href="{{ app.url }}" class="btn-open" target="_blank" rel="noopener">アプリを開く →</a>
-    </div>
-  {% endfor %}
+  <div class="site-intro">
+    <h1>LB(L)T LABO</h1>
+    <p>日常をちょっと楽しくするWEBアプリケーション集</p>
+  </div>
+
+  <!-- ①＆② コンパクトな幅で並ぶアイコンギャラリー -->
+  <div class="app-grid">
+    {% for app in site.data.apps %}
+      <a href="{{ app.url }}" class="app-item" target="_blank" rel="noopener">
+        <img src="{{ app.icon }}" alt="{{ app.name }}">
+        <div class="app-overlay">
+          <div class="app-name">{{ app.name }}</div>
+          <div class="app-desc-short">{{ app.desc }}</div>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
 </div>
