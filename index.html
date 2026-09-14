@@ -1,0 +1,75 @@
+---
+layout: default
+title: LB(L)T LABO
+---
+
+<style>
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .app-card {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .app-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  .tag {
+    font-size: 0.75rem;
+    color: #586069;
+    background: #f6f8fa;
+    padding: 3px 8px;
+    border-radius: 12px;
+    align-self: flex-start;
+    margin-bottom: 12px;
+  }
+  .app-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #24292e;
+  }
+  .app-desc {
+    font-size: 0.875rem;
+    color: #586069;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  .btn-open {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #0366d6;
+    text-decoration: none;
+  }
+  .btn-open:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<h2>LB(L)T LABO</h2>
+
+<div class="card-grid">
+  {% for app in site.data.apps %}
+    <div class="app-card">
+      <div>
+        <span class="tag">{{ app.tag }}</span>
+        <h3 class="app-title">{{ app.name }}</h3>
+        <p class="app-desc">{{ app.desc }}</p>
+      </div>
+      <a href="{{ app.url }}" class="btn-open" target="_blank" rel="noopener">アプリを開く →</a>
+    </div>
+  {% endfor %}
+</div>
+
+{% include footer.html %}
