@@ -2,18 +2,22 @@
   desc: うれたらペタッとうれしいアプリ
   tag: 🧭 日常の「困った」を解決
   url: https://lblt-labo.github.io/urepeta/
+  icon: https://via.placeholder.com/150/1e293b/38bdf8?text=UREPETA # ← 画像のURLまたはパス
 
 - name: ツイテル
   desc: ペンライトの電池を経験と感覚で管理するアプリ
   tag: 🎪 イベント・推し活に
   url: https://lblt-labo.github.io/tsuiteru/
+  icon: https://via.placeholder.com/150/1e293b/38bdf8?text=TSUITERU
 
 - name: つくペタ
   desc: 味の黄金比を、ペタッとつくれるアプリ
   tag: 🧭 日常の「困った」を解決
   url: https://lblt-labo.github.io/tsukupeta/
+  icon: https://via.placeholder.com/150/1e293b/38bdf8?text=TSUKUPETA
 
 - name: サクカン
   desc: すべての幹事さんをサポートするアプリ
   tag: 🧭 日常の「困った」を解決
   url: https://lblt-labo.github.io/sakukan/
+  icon: https://via.placeholder.com/150/1e293b/38bdf8?text=SAKUKAN
