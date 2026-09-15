@@ -1,3 +1,9 @@
+- name: ソナエログ
+  desc: そなえあればうれしいアプリ
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/sonaelog/
+  icon: https://lblt-labo.github.io/sonaelog/icon-512.png
+
 - name: サクカン
   desc: すべての幹事さんをサポートするアプリ
   tag: 🧭 日常の「困った」を解決
