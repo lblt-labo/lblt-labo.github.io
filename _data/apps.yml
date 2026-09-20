@@ -1,3 +1,9 @@
+- name: SpoTLight
+  desc: フィギュアスケート観戦・実況アプリ
+  tag: 🎪 イベント・推し活に
+  url: https://lblt-labo.github.io/spotlight/
+  icon: https://lblt-labo.github.io/spotlight/icon-512.png
+
 - name: ソナエログ
   desc: そなえあればうれしいアプリ
   tag: 🧭 日常の「困った」を解決
