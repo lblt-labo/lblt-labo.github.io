@@ -1,3 +1,9 @@
+- name: かしかろぐ
+  desc: 医療機関と患者をつなぐ「つらさ」の可視化＆記録アプリ
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/kashikalog/
+  icon: https://lblt-labo.github.io/kashikalog/icon-512.png
+
 - name: SpoTLight
   desc: フィギュアスケート観戦・実況アプリ
   tag: 🎪 イベント・推し活に
