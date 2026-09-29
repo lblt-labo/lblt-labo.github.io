@@ -1,3 +1,9 @@
+- name: みぎひだりカメラ
+  desc: 直感で「みぎ」「ひだり」が分かるカメラ
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/LRcamera/
+  icon: https://lblt-labo.github.io/LRcamera/icon-512.png
+
 - name: かしかろぐ
   desc: 医療機関と患者をつなぐ「つらさ」の可視化＆記録アプリ
   tag: 🧭 日常の「困った」を解決
