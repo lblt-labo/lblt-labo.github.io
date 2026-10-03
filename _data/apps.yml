@@ -1,3 +1,9 @@
+- name: デカスケ
+  desc: 〈今日〉に集中できるスケジュールアプリ
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/dekasuke/
+  icon: https://lblt-labo.github.io/dekasuke/icon-512.png
+
 - name: ゆうしゃのしたく
   desc: たびのなかまと、おうちにかえろう
   tag: 🧭 日常の「困った」を解決
