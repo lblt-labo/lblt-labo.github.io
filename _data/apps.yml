@@ -1,3 +1,9 @@
+- name: ゆうしゃのしたく
+  desc: たびのなかまと、おうちにかえろう
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/yusha-no-shitaku/
+  icon: https://lblt-labo.github.io/yusha-no-shitaku/icon-512.png
+
 - name: みぎひだりカメラ
   desc: 直感で「みぎ」「ひだり」が分かるカメラ
   tag: 🧭 日常の「困った」を解決
