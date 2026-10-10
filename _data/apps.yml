@@ -1,3 +1,9 @@
+- name: 「また素麺？」って、言わせない！
+  desc: 「このまえ何食べた？」を記録するアプリ
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/matasoumen/
+  icon: https://lblt-labo.github.io/matasoumen/icon-512.png
+
 - name: かたちあつめ いろあつめ
   desc: まちのなかをよくみるアプリ
   tag: 🚶‍♂️ おでかけ・旅・体験
