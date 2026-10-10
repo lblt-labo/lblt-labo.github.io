@@ -1,3 +1,9 @@
+- name: かたちあつめ いろあつめ
+  desc: まちのなかをよくみるアプリ
+  tag: 🚶‍♂️ おでかけ・旅・体験
+  url: https://lblt-labo.github.io/katairo/
+  icon: https://lblt-labo.github.io/katairo/icon-512.png
+
 - name: デカスケ
   desc: 〈今日〉に集中できるスケジュールアプリ
   tag: 🧭 日常の「困った」を解決
