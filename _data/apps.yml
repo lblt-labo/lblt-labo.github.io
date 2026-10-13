@@ -1,3 +1,10 @@
+- name: エラボオト
+  desc: 曲を集めて、ペタッと選ぼう
+  tag: 🎪 イベント・推し活に
+  url: https://lblt-labo.github.io/eravote/
+  icon: https://lblt-labo.github.io/eravote/icon-512.png
+
+
 - name: 「また素麺？」って、言わせない！
   desc: 「このまえ何食べた？」を記録するアプリ
   tag: 🧭 日常の「困った」を解決
