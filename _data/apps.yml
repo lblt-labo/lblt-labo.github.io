@@ -1,3 +1,9 @@
+- name: ベスポジ！ the Movie Theaters
+  desc: 映画館のベスポジをシチュエーションごとに記録できるアプリ
+  tag: 🎪 イベント・推し活に
+  url: https://lblt-labo.github.io/besposi-movie-theaters/
+  icon: https://lblt-labo.github.io/besposi-movie-theaters/icon-512.png
+
 - name: エラボオト
   desc: 曲を集めて、ペタッと選ぼう
   tag: 🎪 イベント・推し活に
