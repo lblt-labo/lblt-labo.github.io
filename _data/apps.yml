@@ -1,3 +1,9 @@
+- name: ナトキコトバ
+  desc: イロンナトキによりそうアプリ
+  tag: 🚶‍♂️ おでかけ・旅・体験
+  url: https://lblt-labo.github.io/natokikotoba/
+  icon: https://lblt-labo.github.io/natokikotoba/icon-512.png
+
 - name: ベスポジ！ the Movie Theaters
   desc: 映画館のベスポジをシチュエーションごとに記録できるアプリ
   tag: 🎪 イベント・推し活に
