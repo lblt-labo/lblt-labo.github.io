@@ -1,3 +1,10 @@
+- name: もしもいちもん
+  desc: 1日1問で完成するエンディングノート
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/moshimo1mon/
+  icon: https://lblt-labo.github.io/moshimo1mon/icon-512.png
+
+
 - name: ナトキコトバ
   desc: イロンナトキによりそうアプリ
   tag: 🚶‍♂️ おでかけ・旅・体験
