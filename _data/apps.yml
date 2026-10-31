@@ -1,3 +1,15 @@
+- name: あめごよみ
+  desc: 今日の雨をシェアするアプリ
+  tag: 🚶‍♂️ おでかけ・旅・体験
+  url: https://lblt-labo.github.io/amegoyomi/
+  icon: https://lblt-labo.github.io/amegoyomi/icon-512.png
+
+- name: ゆうしゃのしたく LIGHT
+  desc: あたらしいなかまと、おうちにかろう
+  tag: 🧭 日常の「困った」を解決
+  url: https://lblt-labo.github.io/yusha-no-shitaku-light/
+  icon: https://lblt-labo.github.io/yusha-no-shitaku-light/icon-512.png
+
 - name: もしもいちもん
   desc: 1日1問で完成するエンディングノート
   tag: 🧭 日常の「困った」を解決
