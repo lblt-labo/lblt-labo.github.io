@@ -1,3 +1,15 @@
+- name: わたしのえほん
+  desc: ぐうぜんからうまれるわたしだけのものがたり
+  tag: 🚶‍♂️ おでかけ・旅・体験
+  url: https://lblt-labo.github.io/watashi-no-ehon/
+  icon: https://lblt-labo.github.io/watashi-no-ehon/icon-512.png
+
+- name: チャリンコウ
+  desc: 愛車と旅するサイクリストのための輪行ノート
+  tag: 🚶‍♂️ おでかけ・旅・体験
+  url: https://lblt-labo.github.io/charinkou/
+  icon: https://lblt-labo.github.io/charinkou/icon-512.png
+
 - name: あめごよみ
   desc: 今日の雨をシェアするアプリ
   tag: 🚶‍♂️ おでかけ・旅・体験
