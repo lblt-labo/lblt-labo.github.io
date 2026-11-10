@@ -1,3 +1,9 @@
+- name: いろはろ
+  desc: 「今日の色」を重ねるアプリ
+  tag: 🚶‍♂️ おでかけ・旅・体験
+  url: https://lblt-labo.github.io/iroharo/
+  icon: https://lblt-labo.github.io/iroharo/icon-512.png
+
 - name: わたしのえほん
   desc: ぐうぜんからうまれるわたしだけのものがたり
   tag: 🚶‍♂️ おでかけ・旅・体験
