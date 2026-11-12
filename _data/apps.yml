@@ -1,3 +1,9 @@
+- name: 自由律をつかまえる
+  desc: ただよう言葉から自由律俳句を詠むアプリ
+  tag: 🚶‍♂️ おでかけ・旅・体験
+  url: https://lblt-labo.github.io/jiyuritsu-catch/
+  icon: https://lblt-labo.github.io/jiyuritsu-catch/icon-512.png
+
 - name: いろはろ
   desc: 「今日の色」を重ねるアプリ
   tag: 🚶‍♂️ おでかけ・旅・体験
