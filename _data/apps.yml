@@ -1,3 +1,9 @@
+- name: わたしだけのなんでもない日
+  desc: 特別じゃない日が、特別な日になるアプリ
+  tag: 🚶‍♂️ おでかけ・旅・体験
+  url: https://lblt-labo.github.io/nandemonai-day/
+  icon: https://lblt-labo.github.io/nandemonai-day/icon-512.png
+
 - name: 自由律をつかまえる
   desc: ただよう言葉から自由律俳句を詠むアプリ
   tag: 🚶‍♂️ おでかけ・旅・体験
